@@ -66,11 +66,11 @@ function load_script($hook){
   if( $hook != 'modifier_page_block-times')
     return;
 
-  wp_enqueue_style("stylecss",  plugins_url( 'block/css/style.css' , dirname(__FILE__)));
-  wp_enqueue_script("mainjs",  plugins_url( 'block/js/main.js' , dirname(__FILE__)));
-  wp_enqueue_script("execjs",  plugins_url( 'block/js/exec.js' , dirname(__FILE__)));
+  wp_enqueue_style("stylecss",  plugins_url( 'wordpress-plugin-mdb/css/style.css' , dirname(__FILE__)));
+  wp_enqueue_script("mainjs",  plugins_url( 'wordpress-plugin-mdb/js/main.js' , dirname(__FILE__)));
+  wp_enqueue_script("execjs",  plugins_url( 'wordpress-plugin-mdb/js/exec.js' , dirname(__FILE__)));
   wp_localize_script( 'mainjs', 'postHandling', array(
-    'timesUrl' => plugins_url( 'block/block_times_query.php' , dirname(__FILE__)),
+    'timesUrl' => plugins_url( 'wordpress-plugin-mdb/block_times_query.php' , dirname(__FILE__)),
 
   ));
 }

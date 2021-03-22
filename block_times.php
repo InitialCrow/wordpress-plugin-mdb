@@ -1,3 +1,4 @@
+<h2>Gestion des horraires</h2>
 <?php
 global $wpdb;
 $days = [
@@ -31,4 +32,4 @@ foreach ($hours as $h) {
     </div>
 <?php endforeach; ?>
 
-<p>* Pour entrer un nouvelle horaire ecrivez dans l'un des champs sous le format h-h puis pressez [entrée] ex : 12h-15h pour une ouverture en 12h et 15h </p>
+<p>* Pour entrer un nouvelle horaire ecrivez dans l'un des champs sous le format h-h puis pressez [entrée] ex : 12-15 pour une ouverture en 12h et 15h </p>
